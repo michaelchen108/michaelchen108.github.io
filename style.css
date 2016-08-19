@@ -7,7 +7,6 @@ header nav {
   	width: 100%;
 }
 
-
 header p {
   	padding: 30px;
   	margin: 10px;
@@ -27,19 +26,45 @@ header p {
 
 	color: ##ffffff;
 	height: 100vh;
-	width: 100vw;
 	text-shadow: 0.25px 0.25px 0.25px #000000;
+	padding: 0px;
+	margin: 0px;
 }
 
-.jumbotron .col-sm-6 h2 {
-	font-size: 70px;
+.jumbotron h2 {
+	font-size: 90px;
 	color: white;
 	font: Georgia;
 	font-weight: bold;
-	border-style: solid;
-	border-width: 5px;
-	height:	100px;
-	width: 500px;
-	
+/*	border-style: solid;
+	border-width: 5px;*/
+
+	/*center in page*/
+    position: absolute;
+    margin-top: 47%;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.aboutMe {
+	padding: 30px;
+	height: 1000px;
 
 }
+
+.aboutMe h1 {
+	font-size: 40px;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 5px;
+	vertical-align: middle;
+}
+
+.aboutMe p {
+	font-size: 18px;
+	font: Garamond;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
