@@ -2,3 +2,13 @@ header nav {
   display: flex;
   justify-content: flex-end;
 }
+
+.jumbotron {
+	display: flex;
+  	align-items: center;
+  	background-image: url('https://scontent.fsnc1-3.fna.fbcdn.net/t31.0-8/13909351_10210329540541815_8459588930511592919_o.jpg');
+	background-size: cover;
+	color: #ffffff;
+	height: 500px;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
+}
