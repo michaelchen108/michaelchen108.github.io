@@ -1,14 +1,45 @@
 header nav {
-  display: flex;
-  justify-content: flex-end;
+  	display: flex;
+  	justify-content: center;
+  	color: black;
+  	font-weight: bold;
+  	padding: 0px;
+  	width: 100%;
+}
+
+
+header p {
+  	padding: 30px;
+  	margin: 10px;
+  	border-style: solid;
+  	font-size: 24px;
 }
 
 .jumbotron {
 	display: flex;
-  	align-items: center;
-  	background-image: url('https://scontent.fsnc1-3.fna.fbcdn.net/t31.0-8/13909351_10210329540541815_8459588930511592919_o.jpg');
-	background-size: cover;
-	color: #ffffff;
-	height: 500px;
+  	background-image: url('http://andyporterimages.com/wp-content/uploads/2015/04/Liberty_Bell_Milky_Way1.jpg');
+	
+	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* end */
+
+	color: ##ffffff;
+	height: 100vh;
+	width: 100vw;
 	text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron .col-sm-6 h2 {
+	font-size: 70px;
+	color: white;
+	font: Georgia;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 5px;
+	height:	100px;
+	width: 500px;
+	
+
 }
