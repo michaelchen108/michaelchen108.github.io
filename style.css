@@ -60,11 +60,24 @@ header p {
 	vertical-align: middle;
 }
 
+.aboutMe .row {
+	display: flex;
+}
+
 .aboutMe p {
 	font-size: 18px;
 	font: Garamond;
 	margin-right: 50px;
+	margin-left: 500px;
+	margin-top: -475px;
+	float: right;
+}
+
+.aboutMe img {
+	height:	500px;
+	float: left;
+	margin-top: 75px;
 	margin-left: 50px;
-	margin-top: 50px;
+	border-radius: 100%;
 }
 
