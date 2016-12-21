@@ -1,96 +1,37 @@
-header nav {
-  	display: flex;
-  	justify-content: center;
-  	color: black;
-  	font-weight: bold;
-  	padding: 0px;
-  	width: 100%;
-}
-
-header p {
-  	padding: 30px;
-  	margin: 10px;
-  	border-style: solid;
-  	font-size: 24px;
+body {
+  margin: 0px;
+  padding: 0px;
+  /*background-image: url('http://cdn.wallpapersafari.com/47/69/aqTmC1.jpg');*/s
 }
 
 .jumbotron {
-	display: flex;
-  	background-image: url('http://andyporterimages.com/wp-content/uploads/2015/04/Liberty_Bell_Milky_Way1.jpg');
-	
-	/* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* end */
+  background-image: url('http://cdn.wallpapersafari.com/47/69/aqTmC1.jpg');
+  background-size: cover;
 
-	color: ##ffffff;
-	height: 100vh;
+	/*color: #ffffff;*/
 	text-shadow: 0.25px 0.25px 0.25px #000000;
-	padding: 0px;
-	margin: 0px;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .jumbotron h2 {
-	font-size: 90px;
+	font-size: 80px;
 	color: white;
 	font: Georgia;
 	font-weight: bold;
-/*	border-style: solid;
-	border-width: 5px;*/
-
-	/*center in page*/
-    position: absolute;
-    margin-top: 47%;
-    margin-left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+  text-align: center;
 }
 
-.aboutMe {
-	padding: 30px;
-	height: 100vh;
+.personal_photo_container {
+  margin-top: 30px;
+  text-align: center;
 }
 
-.aboutMe h1 {
-	font-size: 40px;
-	font-weight: bold;
-	border-style: solid;
-	border-width: 5px;
-	width: 450px;
-	margin: auto;
-	vertical-align: middle;
-
+#personal_photo {
+	height:	300px;
+  width: 300px;
+  border: solid;
+  border-color: grey;
 }
-
-.aboutMe p {
-	font-size: 18px;
-	font: Garamond;
-	margin-right: 50px;
-	margin-left: 500px;
-	margin-top: -475px;
-	float: right;
-}
-
-.aboutMe img {
-	height:	500px;
-	float: left;
-	margin-top: 75px;
-	margin-left: 50px;
-	border-radius: 100%;
-}
-
-.projects {
-	padding: 30px;
-	height: 100vh;
-}
-
-.projects h1 {
-	font-size: 40px;
-	font-weight: bold;
-	border-style: solid;
-	border-width: 5px;
-	width: 450px;
-	margin: auto;
-	vertical-align: middle;
-}
-
