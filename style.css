@@ -1,8 +1,21 @@
+/* The animation code */
+@keyframes fade-in {
+    from {opacity: 0.1;}
+    to {opacity: 1;}
+}
+
+body {
+    animation-name: fade-in;
+    animation-duration: 0.9s;
+    background-color: #FCF9ED;
+}
+
 #navbar {
   background-color: black;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: right;
+  margin-bottom: 20px;
 }
 
 #navbar h3 {
@@ -35,7 +48,7 @@
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;*/
-  padding: 32px;
+  padding: 26px;
 }
 
 #page {
@@ -46,15 +59,11 @@
 }
 
 #background {
-  /*background-image: url('http://cdn.wallpapersafari.com/47/69/aqTmC1.jpg');*/
-  /*background-image: url('http://i.imgur.com/OEk8H88.jpg');*/
-  /*background-image: url('Sunset.jpg');*/
   background-color: #FCF9ED;
   background-size: cover;
   height: 100vh;
   width: 100%;
   padding-top: 50px;
-  /*filter: brightness(0.95);*/
   z-index: -1;
   top: 0;
   bottom: 0;
@@ -94,8 +103,8 @@
   border-radius: 3px;
   color: #8D8D8D;
   text-align: center;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 30px;
   padding-right: 30px;
   transition: all 0.3s ease 0s;
@@ -120,12 +129,13 @@
   font-family: Lato;
   font-size: 20px;
   width: 50vw;
+  padding-top: 60px;
 }
 
 .personal_photo_container {
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 #personal_photo {
