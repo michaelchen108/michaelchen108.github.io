@@ -23,15 +23,19 @@
   position: absolute;
 }
 
-#page h2 {
-	font-size: 80px;
-	color: white;
-	font: Georgia;
-	font-weight: bold;
+#page .personal_blurb_container {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  padding-top: 100px;
+}
+
+#page #personal_blurb {
+  color: white;
   font-family: Lato;
-  margin: 0px;
-  padding-top: 50px;
+  font-size: 20px;
+  width: 50vw;
 }
 
 #page .button-list {
@@ -46,7 +50,6 @@
   font-size: 30px;
   font-weight: bold;
   font-family: Lato;
-  margin: 30px;
   background-color: Transparent;
   border-color: black;
   border: solid;
@@ -57,18 +60,4 @@
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.personal_photo_container {
-  margin-top: 50px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-#personal_photo {
-	height:	300px;
-  width: 300px;
-  border: solid;
-  border-color: black;
-  border-radius: 20px;
 }
