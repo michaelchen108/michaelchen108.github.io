@@ -1,3 +1,42 @@
+#navbar {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: right;
+}
+
+#navbar h3 {
+  display: inline;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a:hover {
+  text-decoration: none;
+}
+
+#navbar .navbutton {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Lato;
+  margin: 30px;
+  background-color: Transparent;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #page {
   position: relative;
   z-index: 1;
