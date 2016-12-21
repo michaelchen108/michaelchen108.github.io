@@ -1,37 +1,74 @@
-body {
+#page {
+  position: relative;
+  z-index: 1;
   margin: 0px;
   padding: 0px;
-  /*background-image: url('http://cdn.wallpapersafari.com/47/69/aqTmC1.jpg');*/s
 }
 
-.jumbotron {
+#background {
   background-image: url('http://cdn.wallpapersafari.com/47/69/aqTmC1.jpg');
+  /*background-image: url('http://i.imgur.com/OEk8H88.jpg');*/
+  /*background-image: url('Sunset.jpg');*/
+  /*background-color: #*/
   background-size: cover;
-
-	/*color: #ffffff;*/
-	text-shadow: 0.25px 0.25px 0.25px #000000;
   height: 100vh;
   width: 100%;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  padding-top: 50px;
+  filter: brightness(0.5);
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
-.jumbotron h2 {
+#page h2 {
 	font-size: 80px;
 	color: white;
 	font: Georgia;
 	font-weight: bold;
   text-align: center;
+  font-family: Lato;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+#page .button-list {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 70px;
+}
+
+#page .button {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px;
+  background-color: Transparent;
+  border-color: black;
+  border: solid;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*margin: auto;*/
 }
 
 .personal_photo_container {
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #personal_photo {
 	height:	300px;
   width: 300px;
   border: solid;
-  border-color: grey;
+  border-color: black;
+  border-radius: 20px;
 }
