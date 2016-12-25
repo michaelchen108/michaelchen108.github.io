@@ -128,11 +128,13 @@ body {
 }
 
 #page .personal_blurb_container {
-  text-align: center;
+  /*text-align: center;*/
   margin-left: auto;
   margin-right: auto;
   width: 50vw;
   padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #page #personal_blurb {
@@ -141,6 +143,7 @@ body {
   font-size: 20px;
   width: 50vw;
   padding-top: 10px;
+
 }
 
 .personal_photo_container {
