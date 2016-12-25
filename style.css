@@ -44,10 +44,6 @@ body {
   background-color: Transparent;
   color: white;
   text-align: center;
-  /*padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;*/
   padding: 26px;
 }
 
@@ -61,7 +57,23 @@ body {
 #background {
   background-color: #FCF9ED;
   background-size: cover;
+  background-attachment: scroll;
   height: 100vh;
+  width: 100%;
+  padding-top: 50px;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+#project-background {
+  background-color: #FCF9ED;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
   width: 100%;
   padding-top: 50px;
   z-index: -1;
@@ -87,7 +99,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-left: 0px;
 }
 
 #page .button {
@@ -96,18 +109,16 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 0px;
-  /*background-color: Transparent;*/
   background: white;
-  /*border-color: black;*/
-  /*border: solid;*/
   border-radius: 3px;
   color: #8D8D8D;
   text-align: center;
+  display: inline-block;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 30px;
   padding-right: 30px;
-  transition: all 0.4s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 #page .button:hover {
@@ -121,7 +132,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50vw;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 #page #personal_blurb {
@@ -129,7 +140,7 @@ body {
   font-family: Lato;
   font-size: 20px;
   width: 50vw;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 .personal_photo_container {
@@ -144,4 +155,43 @@ body {
   border: solid;
   border-color: Transparent;
   border-radius: 150px;
+}
+
+#page h1 {
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  font-family: Lato;
+}
+
+#page .project-container {
+  padding-bottom: 50px;
+}
+
+#page .project {
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  transition: all 0.4s ease 0s;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page .project:hover {
+  background: #FCD59C;
+}
+
+#page .project-title {
+  font-style: italic;
+  font-family: Lato;
+}
+
+#page .project-description {
+  font-family: Lato;
+  font-size: 13pt;
+  margin-left: 30px;
 }
