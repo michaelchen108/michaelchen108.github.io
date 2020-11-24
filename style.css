@@ -116,9 +116,9 @@ body {
 }
 
 #personal-photo-container {
-    padding-top: 70px;
+    padding-top: 5vh;
+    padding-left: 10vw;
     padding-bottom: 30px;
-    padding-left: 350px;
     padding-right: 100px;
 }
 
