@@ -1,73 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Michael Chen</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/js" href="main.js">
-    <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="icon" href="BDC-portrait.jpg">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="icon" href="Headshot.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-  </head>
-  <body>
-    <body>
-      <div id="page">
-        <ul class="button-list">
-          <a class="button" href="index.html">Back</a>
-          <a class="button" href="https://github.com/michaelchen108" target="_blank">Github</a>
-        </ul>
-        <h1>Projects</h1>
-        <div class="project-container">
-          <div class="project">
-            <h3 class="project-title">iOS Graphics Optimization</h3>
-            <p class="project-description">
-              I completed this project during the summer of 2016 during my internship at MechDome. This
-              project was about finding a way to optimize graphics on iOS using OpenGL ES 1.1 and 2.0.
-              I was able to take advantage of the "two steps" in the graphics pipeline process to split
-              work into a rendering portion and displaying portion. I delegated the rendering portion
-              to a background thread and only used the main UI thread to draw images when they were ready
-              to be drawn from the render buffer. This approach also featured double buffer rendering to
-              make sure that a frame is always rendering even if another frame is being draw on screen.
-              This reduced graphics work on the main UI thread allows the application to run other more
-              important processes that are only able to run on the main thread, and thereby increased the
-              graphical efficiency of the company's product.
-            </p>
-            <p class="project-description">
-              This project is currently public on my Github
-              <a href="https://github.com/michaelchen108/iOS-OpenGL-ES-1.1-Threading">here</a>.
-            </p>
-          </div>
-          <div class="project">
-            <h3 class="project-title">Splitr</h3>
-            <p class="project-description">
-              During the 2015 UCSC Hackathon, I participated in a team of four to create Splitr, which is an application
-              that hugely simplifies the task of bill splitting. Splitr uses Optical Character Recognition (OCR) to read
-              in an image of a receipt or bill and parses the text to output the different items on your mobile device.
-              Items can then be assigned to different people to easily calculate the subtotals that each person owes
-              for the bill. We used the open source library Tesseract to integrate OCR functionality in our application.
-            </p>
-            <p class="project-description">
-              This project is currently public on my Github
-              <a href="https://github.com/michaelchen108/Splitr">here</a>.
-            </p>
-          </p>
-          </div>
-          <div class="project">
-            <h3 class="project-title">Gitlet</h3>
-            <p class="project-description">
-              Gitlet is a local file-based version control system that operates on the same commands that
-              Git typically uses such as add, remove, commit, rebase, etc. This project is essentially a spinoff of
-              Git that I built from scratch. The Git-like commands can be run via terminal just as normal Git commands
-              are usually used. While I do not have the project available on my Github, you may contact
-              me via email if you particularly wish to see the project.
-            </p>
-          </div>
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div id="personal-title">
+                <h2>
+                    <span id="personal-title-name">Michael Chen</span>
+                    <span class="horizontal-spacer"></span>
+                    <span id="personal-title-divider">/</span>
+                    <span class="horizontal-spacer"></span>
+                    <span id="personal-title-subtitle">SOFTWARE ENGINEER</span>
+                </h2>
+            </div>
+            <div>
+                <ul class="nav-menu-button-list">
+                    <a href="index.html">Home</a>
+                    <a class="active" href="projects.html">Projects</a>
+                    <a href="dance.html">Dance</a>
+                    <a href="https://www.linkedin.com/in/michaelchen108/" target="_blank">
+                        <img src="linkedin-logo.png">
+                    </a>
+                    <a href="https://github.com/michaelchen108" target="_blank">
+                        <img src="github-logo.png">
+                    </a>
+                    <a href="https://www.instagram.com/poppinmc" target="_blank">
+                        <img src="instagram-logo.png">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCXuIQExbMjLekCw3Hk7S-Iw" target="_blank">
+                        <img src="youtube-logo.png">
+                    </a>
+                    <a href="mailto:108.michael@gmail.com">
+                        <img src="mail-icon.png">
+                    </a>
+                </ul>
+            </div>
         </div>
-      </div>
-    </body>
-  </body>
+    </header>
+
+    <div id="project-page">
+        <h1 id="projects-page-header">Software Projects</h1>
+        <div id="project-container">
+            <div class="project">
+                <h3 class="project-title">iOS Graphics Optimization</h3>
+                <p class="project-description">
+                    I completed this project during the summer of 2016 during my internship at MechDome. This project was about finding a way to optimize graphics on iOS using OpenGL ES 1.1 and 2.0. I was able to take advantage of the "two steps" in the graphics pipeline
+                    process to split work into a rendering portion and displaying portion. I delegated the rendering portion to a background thread and only used the main UI thread to draw images when they were ready to be drawn from the render buffer.
+                    This approach also featured double buffer rendering to make sure that a frame is always rendering even if another frame is being draw on screen. This reduced graphics work on the main UI thread allows the application to run other more
+                    important processes that are only able to run on the main thread, and thereby increased the graphical efficiency of the company's product.
+                </p>
+                <p class="project-description">
+                    This project is currently public on my Github
+                    <a href="https://github.com/michaelchen108/iOS-OpenGL-ES-1.1-Threading" target="_blank">here</a>.
+                </p>
+            </div>
+            <div class="project">
+                <h3 class="project-title">Splitr</h3>
+                <p class="project-description">
+                    During the 2015 UCSC Hackathon, I participated in a team of four to create Splitr, which is an application that hugely simplifies the task of bill splitting. Splitr uses Optical Character Recognition (OCR) to read in an image of a receipt or bill and
+                    parses the text to output the different items on your mobile device. Items can then be assigned to different people to easily calculate the subtotals that each person owes for the bill. We used the open source library Tesseract to
+                    integrate OCR functionality in our application.
+                </p>
+                <p class="project-description">
+                    This project is currently public on my Github
+                    <a href="https://github.com/michaelchen108/Splitr" target="_blank">here</a>.
+                </p>
+                </p>
+            </div>
+            <div class="project">
+                <h3 class="project-title">Gitlet</h3>
+                <p class="project-description">
+                    Gitlet is a local file-based version control system that operates on the same commands that Git typically uses such as add, remove, commit, rebase, etc. This project is essentially a spinoff of Git that I built from scratch. The Git-like commands can
+                    be run via terminal just as normal Git commands are usually used. While I do not have the project available on my Github, you may contact me via email if you particularly wish to see the project.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

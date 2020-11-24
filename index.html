@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Michael Chen</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/js" href="main.js">
-    <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="icon" href="BDC-portrait.jpg">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="icon" href="Headshot.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="page">
-      <div class="personal_photo_container">
-        <img id="personal_photo" src="personal_photo.png">
-      </div>
-      <h2>Michael Chen</h2>
-      <div>
-        <ul class="button-list">
-          <a class="button" href="https://www.linkedin.com/in/michaelchen108" target="_blank">LinkedIn</a>
-          <a class="button" href="projects.html">Projects</a>
-          <!-- <a class="button" href="dance.html">Dance</a> -->
-          <a class="button" href="mailto:108.michael@gmail.com">Contact Me</a>
-        </ul>
-      </div>
-      <div class="personal_blurb_container">
-        <div id="personal_blurb">
-          Hello! My name is Michael Chen. I am a software engineer currently based in the Bay Area.
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div id="personal-title">
+                <h2>
+                    <span id="personal-title-name">Michael Chen</span>
+                    <span class="horizontal-spacer"></span>
+                    <span id="personal-title-divider">/</span>
+                    <span class="horizontal-spacer"></span>
+                    <span id="personal-title-subtitle">SOFTWARE ENGINEER</span>
+                </h2>
+            </div>
+            <div>
+                <ul class="nav-menu-button-list">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="dance.html">Dance</a>
+                    <a href="https://www.linkedin.com/in/michaelchen108/" target="_blank">
+                        <img src="linkedin-logo.png">
+                    </a>
+                    <a href="https://github.com/michaelchen108" target="_blank">
+                        <img src="github-logo.png">
+                    </a>
+                    <a href="https://www.instagram.com/poppinmc" target="_blank">
+                        <img src="instagram-logo.png">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCXuIQExbMjLekCw3Hk7S-Iw" target="_blank">
+                        <img src="youtube-logo.png">
+                    </a>
+                    <a href="mailto:108.michael@gmail.com">
+                        <img src="mail-icon.png">
+                    </a>
+                </ul>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <div id="homepage-info">
+        <div id="personal-photo-container">
+            <img id="personal-photo" src="Headshot.jpg">
+        </div>
+
+        <div id="personal-intro">
+            <h2>Hello</h2>
+            <p>
+                My name is Michael and I'm currently working in the Bay Area as a software engineer.
+                <br> I also enjoy expressing myself through
+                <a class="emphasized-text" href="https://www.youtube.com/channel/UCXuIQExbMjLekCw3Hk7S-Iw">dance and choreography</a> in my spare time.
+            </p>
+        </div>
     </div>
-  </body>
+
+</body>
+
 </html>
